@@ -57,3 +57,10 @@ input{
 input:focus{
   border-color:var(--text-white);
 }
+.menu{
+  display: none;
+}
+#menu{
+  opacity: 0;
+  display: 0;
+}

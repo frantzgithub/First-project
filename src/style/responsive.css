@@ -1,0 +1,120 @@
+@media screen and (max-width: 830px ){
+  body{
+    padding: 0 15px;
+  }
+  .filter__container{
+  justify-content: flex-start;
+}
+  .search__container{
+    display: none;
+  }
+  .main__container{
+    margin-top:60px;
+  }
+  .list__container{
+  grid-template-columns: repeat(2, 1fr);
+}
+.list__item > figure > img{
+  width:200px;
+  height: 170px;
+}
+.aside__container{
+  width: 200px;
+  margin-right:10px;
+}
+.aside__item{
+  width: 200px;
+  height: 50px;
+}
+}
+
+@media screen and (max-width: 600px){
+  .search__container{
+    display: block;
+  }
+  .filter__container{
+    display: none;
+  }
+  .menu{
+    display: block;
+    margin-top:70px;
+    background-color: var(--head-btn);
+    padding: 15px;
+    border-radius: 20px;
+  }
+  #menu:checked + .filter__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 500px;
+    background-color: var(--text-white);
+    margin:auto;
+    border-radius: var(--radius);
+  }
+  .filter__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .filter__buttons .btn{
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+  }
+  .search__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search__container > input{
+    font-size: 15px;
+  }
+  .search__button{
+    width: 40px;
+    height: 48px;
+    padding: 0 5px;
+    border: none;
+    margin-right:15px;
+  }
+  
+  .main__container{
+  flex-direction: column;
+  justify-content: center;
+  margin-top:30px;
+  
+}
+  .list__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list__item{
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 40px -20px var(--text-black);
+  }
+  .list__item > figure > img{
+  width:300px;
+  height: 300px;
+  border-radius: 5px;
+  
+}
+.list__item > figure > figcaption{
+  margin-top:34px;
+  color:var(--head-btn);
+  font-size: 25px;
+}
+.aside__container{
+  width: 80%;
+  margin-right:0;
+  margin: 26px auto;
+  background-color: var(--text-white);
+  padding: 20px;
+  border-radius:var(--radius);
+}
+}
