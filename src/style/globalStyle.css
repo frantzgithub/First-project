@@ -16,7 +16,7 @@
 body{
   background-color: var(--background);
   color: var(--text-principal);
-  padding: 0 80px;
+  padding: 0 70px;
 }
 .header__container{
   background-color: var(--background);
@@ -44,6 +44,7 @@ button, .search__button{
   outline: none;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  font-size: 18px;
 }
 button:hover, .search__button:hover{
   background-color: var(--btn-hov);
